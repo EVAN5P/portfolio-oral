@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Oral - BTS SIO SISR</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #020617, #020617);
+      color: #e5e7eb;
+    }
+    header {
+      background: #020617;
+      color: #22c55e;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 2px solid #22c55e;
+    }
+    section {
+      background-color: #020617;
+      margin: 40px auto;
+      padding: 25px;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(34,197,94,0.2);
+      border: 1px solid #22c55e;
+    }
+    h2 {
+      color: #22c55e;
+      border-bottom: 1px solid #22c55e;
+      padding-bottom: 8px;
+    }
+    ul { padding-left: 20px; }
+
+    /* Menus latéraux */
+    .side-menu {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 1000;
+    }
+    .side-menu.left { left: 15px; }
+    .side-menu.right { right: 15px; }
+    .side-menu a {
+      text-decoration: none;
+      color: #22c55e;
+      background: #020617;
+      padding: 10px 14px;
+      border: 1px solid #22c55e;
+      border-radius: 8px;
+      font-size: 14px;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+    .side-menu a:hover {
+      background: #22c55e;
+      color: #020617;
+      transform: scale(1.1);
+    }
+
+    /* Bouton */
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 20px;
+      background-color: #22c55e;
+      color: #020617;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    /* Texte hacker défilant */
+    .hacker-text {
+      overflow: hidden;
+      white-space: nowrap;
+      border-top: 1px solid #22c55e;
+      border-bottom: 1px solid #22c55e;
+      margin-top: 20px;
+    }
+    .hacker-text span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 15s linear infinite;
+      color: #22c55e;
+      font-family: monospace;
+    }
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-100%); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px;
+      background-color: #020617;
+      color: #22c55e;
+      margin-top: 40px;
+      border-top: 1px solid #22c55e;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu gauche -->
+  <nav class="side-menu left">
+    <a href="#presentation">Présentation</a>
+    <a href="#veille">Veille</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Menu droite -->
+  <nav class="side-menu right">
+    <a href="#presentation">👨‍💻</a>
+    <a href="#veille">🛡️</a>
+    <a href="#cv">📄</a>
+    <a href="#contact">📞</a>
+  </nav>
+
+  <header>
+    <h1>Portfolio Oral</h1>
+    <p><strong>Evan Fayola</strong></p>
+    <p>BTS SIO – Spécialité SISR</p>
+  </header>
+
+  <div class="hacker-text">
+    <span>ACCESS GRANTED ▓ SISR MODE ▓ NETWORK ▓ SECURITY ▓SYSTEM ADMINISTRATION ▓ BTS SIO ▓</span>
+  </div>
+
+  <section id="presentation">
+    <h2>Présentation</h2>
+    <p>
+      Je suis étudiant en BTS SIO, spécialité SISR (Solutions d’Infrastructure, Systèmes et Réseaux).
+      Je m’intéresse particulièrement à l’administration des réseaux, la sécurité informatique
+      et la gestion des systèmes.
+    </p>
+  </section>
+
+  <section id="veille">
+  <h2>Veille Technologique (SISR)</h2>
+
+  <p><strong>Sujet :</strong> La cybersécurité dans les infrastructures informatiques</p>
+
+  <p>
+    Dans le cadre de ma formation en BTS SIO SISR (1ʳᵉ année), je réalise une veille technologique
+    sur la cybersécurité afin de comprendre les risques informatiques auxquels les entreprises
+    sont confrontées et les bonnes pratiques à mettre en place.
+  </p>
+
+  <ul>
+    <li>Les attaques par phishing visant les utilisateurs par e-mail</li>
+    <li>Les ransomwares qui bloquent les systèmes et demandent une rançon</li>
+    <li>L’importance des mises à jour des systèmes et logiciels</li>
+    <li>La sauvegarde régulière des données pour éviter les pertes</li>
+  </ul>
+
+  <p><strong>Sources utilisées pour la veille :</strong></p>
+  <ul>
+    <li><a href="https://www.cert.ssi.gouv.fr" target="_blank">CERT-FR (ANSSI)</a> – Alertes et menaces de sécurité</li>
+    <li><a href="https://www.ssi.gouv.fr" target="_blank">ANSSI</a> – Bonnes pratiques en cybersécurité</li>
+    <li><a href="https://www.zataz.com" target="_blank">ZATAZ</a> – Actualités cybersécurité</li>
+    <li><a href="https://www.01net.com" target="_blank">01net</a> – Articles sur la sécurité informatique</li>
+  </ul>
+
+  <p>
+    Cette veille me permet de mieux comprendre le rôle d’un technicien SISR dans la protection
+    des réseaux, des serveurs et des données en entreprise.
+  </p>
+</section>
+
+
+
+  <section>
+    <h2>Compétences (SISR)</h2>
+    <ul>
+      <li>Installation et configuration de postes clients</li>
+      <li>Administration de base Windows / Linux</li>
+    </ul>
+  </section>
+
+  <!-- CV en bas -->
+  <section id="cv">
+    <h2>Curriculum Vitae</h2>
+    <a href="Evan Fayola.pdf" target="_blank" class="button">📄 Consulter mon CV (PDF)</a>
+  </section>
+
+  <!-- Contact en bas -->
+  <section id="contact" class="contact">
+    <h2>Contacts</h2>
+    <p><strong>Email :</strong> evan.fayola59300@gmail.com</p>
+    <p><strong>Téléphone :</strong> 07 58 68 79 59</p>
+    <p><strong>Localisation :</strong> Aulnoy-lez-Valenciennes</p>
+  </section>
+
+  <footer>
+    <p>Portfolio evan fayola – BTS SIO SISR</p>
+  </footer>
+
+</body>
+</html>
